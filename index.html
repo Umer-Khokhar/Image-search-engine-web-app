@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Search Engine JavaScrip</title>
+  </head>
+  <body class="main-gratient">
+    <main class="main-container min-w-full min-h-screen text-white">
+      <section
+        class="search-sec flex justify-center flex-col items-center mt-8"
+      >
+        <h1 class="heading ubuntu text-3xl font-bold mt-12 mb-10">
+          Image Search Engine Web App
+        </h1>
+        <form
+          id="search-form"
+          class="w-2/5  flex input-bg-transparent h-16 rounded-lg max-w-xl"
+          action=""
+        >
+          <input
+            id="search-box"
+            class="flex-1 px-6 outline-none border-none text-lg font-semibold bg-transparent placeholder:text-gray-300 placeholder:text-lg"
+            type="search"
+            name=""
+            id="search"
+            placeholder="Search you desire images here"
+          />
+          <input
+            class="bg-red-500 px-8 rounded-r-lg cursor-pointer"
+            type="submit"
+            value="Search"
+          />
+        </form>
+        <div
+          class="result grid grid-cols-3 gap-8 mt-8 display-none mb-4 w-11/12"
+          id="search-results"
+        ></div>
+        <button
+          id="results"
+          class="btn mx-auto bg-red-500 text-base rounded-lg mt-8 py-3 px-6 hidden mb-10"
+        >
+          Show more
+        </button>
+      </section>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
